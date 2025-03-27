@@ -12,19 +12,20 @@ Mario Kart é uma série de jogos de corrida desenvolvida e publicada pela Ninte
 <table>
   <tbody>
     <tr>
-      <td>Mario</td>
+      <td>Mario <br> <img src="https://github.com/Lais-lfs/simulador-mario-kart/blob/main/docs/mario.gif" width="80px"></td>
       <td>Velocidade: 4 <br> Manobrabilidade: 3 <br> Poder: 3</td>
-      <td>Peach</td>
+      <td>Peach <br> <img src="https://github.com/Lais-lfs/simulador-mario-kart/blob/main/docs/peach.gif" width="100px"></td>
       <td>Velocidade: 3 <br> Manobrabilidade: 4 <br> Poder: 2</td>
-      <td>Yoshi</td>
+      <td>Yoshi <br> <img src="https://github.com/Lais-lfs/simulador-mario-kart/blob/main/docs/yoshi.gif" width="100px"></td>
       <td>Velocidade: 2 <br> Manobrabilidade: 4 <br> Poder: 3</td>
     </tr>
     <tr>
-      <td>Bowser</td>
+      <td>Bowser <br><br>
+        <img src="https://github.com/Lais-lfs/simulador-mario-kart/blob/main/docs/bowser.gif" width="100px"></td>
       <td>Velocidade: 5 <br> Manobrabilidade: 2 <br> Poder: 5</td>
-      <td>Luigi</td>
+      <td>Luigi <br> <img src="https://github.com/Lais-lfs/simulador-mario-kart/blob/main/docs/luigi.gif" width="100px"></td>
       <td>Velocidade: 3 <br> Manobrabilidade: 4 <br> Poder: 4</td>
-      <td>Donkey Kong</td>
+      <td>Donkey Kong <br> <img src="https://github.com/Lais-lfs/simulador-mario-kart/blob/main/docs/dk.gif" width="100px"></td>
       <td>Velocidade: 2 <br> Manobrabilidade: 2 <br> Poder: 5</td>
     </tr>
   </tbody>
