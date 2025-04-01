@@ -18,6 +18,10 @@ async function rollDice() {
     return Math.floor(Math.random() * 6) + 1;
 }
 
+async function sortNumber() {
+    return Math.floor(Math.random() * 2) + 1;
+}
+
 async function getRandomBlock() {
     let random = Math.random();
     let result
@@ -107,15 +111,31 @@ async function playRaceEngine(character1, character2) {
                 diceResult2,
                 character2.PODER);
 
-            if (powerResult1 > powerResult2 && character2.PONTOS > 0) {
-                console.log(`${character1.NOME} venceu o confronto! ${character2.NOME} perdeu 1 ponto 🐢`);
-                character2.PONTOS--;
+            let drawnNumber = await sortNumber();
+
+            if (powerResult1 > powerResult2) {
+                if(drawnNumber === 2) {
+                    console.log(`${character1.NOME} ganhou um turbo! E por isso ganhou 1 ponto!`);
+                    character1.PONTOS++;
+                }
+
+                if(character2.PONTOS > 0) {
+                    console.log(`${character1.NOME} venceu o confronto! ${character2.NOME} perdeu 1 ponto 🐢`);
+                    character2.PONTOS--;
+                }
             }
             // character2.PONTOS -= powerResult1 > powerResult2 && character2.PONTOS > 0 ? 1 : 0;
 
-            if (powerResult2 > powerResult1 && character1.PONTOS > 0) {
-                console.log(`${character2.NOME} venceu o confronto! ${character1.NOME} perdeu 1 ponto 🐢`);
-                character1.PONTOS--;
+            if (powerResult2 > powerResult1) {
+                if(drawnNumber === 2) {
+                    console.log(`${character2.NOME} ganhou um turbo! E por isso ganhou 1 ponto!`);
+                    character2.PONTOS++;
+                }
+
+                if(character1.PONTOS > 0) {
+                    console.log(`${character2.NOME} venceu o confronto! ${character1.NOME} perdeu 1 ponto 🐢`);
+                    character1.PONTOS--;
+                }
             }
             // character1.PONTOS -= powerResult2 > powerResult1 && character1.PONTOS > 0 ? 1 : 0;
 
