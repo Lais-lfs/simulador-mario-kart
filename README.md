@@ -50,7 +50,7 @@ O Computador deve receber dois personagens para disputar a corrida em um objeto 
 - A cada rodada, será sorteado um bloco da pista que pode ser uma **reta**, **curva** ou **confronto**
   - Caso o bloco da pista seja uma **RETA**, o jogador deve jogar um dado de 6 lados e somar o atributo **VELOCIDADE**, quem tiver o maior somatório vence e ganha um ponto.
   - Caso o bloco da pista seja uma **CURVA**, o jogador deve jogar um dado de 6 lados e somar o atributo **MANOBRABILIDADE**, quem tiver o maior somatório vence e ganha um ponto.
-  - Caso o bloco da pista seja um **CONFRONTO**, o jogador deve jogar um dado de 6 lados e somar o atributo **PODER**, quem tiver menos pontos perde a rodada e um ponto.
+  - Caso o bloco da pista seja um **CONFRONTO**, o jogador deve jogar um dado de 6 lados e somar o atributo **PODER**, quem tiver menos pontos perde a rodada e um ponto. Neste bloco também será sorteado um turbo aleatório, caso o jogador que obteve mais pontos seja contemplado com um turbo, ele ganha um ponto.
   - Nenhum jogador pode ter pontuação negativa (valores abaixo de 0).
 
 Condição de vitória:
